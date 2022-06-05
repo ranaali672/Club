@@ -1,0 +1,443 @@
+/*colors
+background:RGB(37,56,144)
+text:RGB(14,14,14)
+coolr:RGB(245,245,245)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+width: 90%;
+margin: auto;
+
+}
+/*header section*/
+
+header{
+   
+    display: flex;
+    position: fixed;
+    justify-content:space-between;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+  
+    
+}
+.logo{
+    width: 40%;
+    display: flex;
+    float: left;
+  
+}
+.logo img{
+width: 30%;
+}
+nav{
+width: 60%;
+
+float: left;
+text-align: right;
+}nav a{
+    text-decoration: none;
+    display: inline-block;
+   margin-left:15px;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-left:30px;
+    font-size: 21px;
+    color:RGB(245,245,245);
+    text-transform: capitalize;
+}nav a:hover{
+  color:RGB(37,56,190);
+  transition: color 0.5s;
+}
+.clear{
+    clear: both;
+}
+/*Home section*/
+.home{
+    background-image:url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   image-rendering:pixelated;
+    height: 100vh;
+    position: relative;   
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0,0.5);
+}
+.home-content{
+    position: absolute;
+    width:65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+section .title
+{
+     font-family:Arial, Helvetica, sans-serif;
+    font-size: 3.8rem;
+    color:RGB(37,56,190);
+    text-transform: capitalize;
+}.home-desc{
+    margin: 20px 0;
+    color:rgb(139, 137, 137);
+    letter-spacing: 2px;
+    font-size: 20px;
+}.home .btn{
+    min-width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 10px;
+    font-size: 22px;
+    text-transform: capitalize;
+    cursor: pointer;
+}.home .btn:hover{
+    opacity:0.8;
+    transition:opacity 0.5s;
+}
+.home .btn-start{
+    margin-right: 10px;
+    color: RGB(37,56,190);
+   background-color: RGB(245,245,245);
+}.home .btn-learn{
+    background-color: RGB(37,56,190);
+    color: rgb(139, 137, 137);
+}
+/*About section*/
+.about-us{
+    width: 100%;
+   padding: 40px;
+}.about-title{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: RGB(37,56,190);
+    text-transform: uppercase;
+}.about-desc{
+ margin-left:20%;
+ text-align: center;
+ color: #999;
+ width: 60%;
+ font-size: 20px;
+ margin-top: 20px;
+}.line{
+    width: 150px;
+    height: 3px;
+    background-color: RGB(37,56,190);
+margin: auto;
+    display: block;
+    margin: auto;
+}.about-us{
+
+}.about-content{
+
+}
+.about-item{
+    width: 30%;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: capitalize;
+    border: 1px solid rgb(231, 230, 230);
+    padding: 30px 15px;
+    float: left;
+    margin-left: 1.5%;
+}.about-item .mg{
+margin: 0 5%;
+}.about-item .icon{
+    margin-bottom: 10px;
+    color: RGB(37,56,190);
+}.about-item-title{
+margin-bottom: 10px;
+font-family: 'Times New Roman', Times, serif;
+}.about-item-desc{
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #999;
+}.about-item-link{
+text-decoration: none;
+color: RGB(37,56,190);
+
+}.about-item:hover .about-item-title{
+  color: #fff;
+}.ltr-effect{
+    position: relative;
+}
+.ltr-effect:after{
+position:absolute;
+content: "";
+width: 0;
+right: 0;
+bottom: 0;
+background: #333;
+top: 0;
+left: 0;
+transition: width 0.7s;
+z-index:-1;
+
+}.ltr-effect:hover:after{
+    width: 100%;
+    
+}/*services section*/
+.services{
+   padding: 20px;
+   
+}
+.service-item{
+    margin-top: 60px;
+    display: flex;
+    
+}.service-item-img{
+  
+}
+.service-item-content{
+    width: 40%;
+    margin-left: 30px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+.service-item-title{
+    color: RGB(37,56,190);
+}
+.service-item-head{
+   color: rgb(139, 137, 137);
+   margin-bottom: 15px;
+   margin-top: 15px;
+}
+.service-item-desc{
+    color: #999;
+    margin-top: 10px;
+    letter-spacing: 1.6;
+}/*basketball section*/
+.basketball{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}.basketball-item{
+    display: flex;
+    width: 100%;
+    margin-left: 1%;
+}.basketball-content{
+    width: 90%;
+
+}.basketball-img img{
+    width: 100%;
+    height: 70%;
+}.basketball-title{
+    color: RGB(37,56,190);
+    text-transform: capitalize;
+}.basketball-head{
+    color: rgb(139, 137, 137);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}.basketball-desc{
+    color: #999;
+    margin-top: 10px;
+    letter-spacing: 1.6;
+    line-height: 1.8;
+  
+}/*swimming*/
+.swimming{
+   margin-bottom: 50px;
+
+}.swimming-item
+{
+    display: flex;
+   
+
+}.swimming-item-content{
+    width: 40%;
+    margin-left: 30px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+.swimming-item-title{
+    color: RGB(37,56,190);
+    font-size: 2.5rem;
+}.swimming-item-head{
+    color: rgb(139, 137, 137);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.swimming-item-desc{
+    color: #999;
+    margin-top: 10px;
+    letter-spacing: 1;
+    line-height: 1.7;
+}/*news*/
+.news{
+margin-top: 50px;
+background-color: rgb(248, 240, 240);
+}.news-item{
+   width: 32%;
+  margin: 15px;
+  
+}.cards{
+    display: flex;
+}
+.news-span{
+margin-top: 10px;
+display: block;
+font-size: 20px;
+color: RGB(37,56,190);
+font-weight: 500;
+}
+.news-title{
+    font-size: 23px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: rgb(139, 137, 137);
+    font-weight: 700;
+    
+}.news-title:hover{
+    color: RGB(37,56,190);
+}
+.news-desc{
+    line-height: 1.6;
+    color: #999;
+
+}/*contact-us*/
+.contact-us{
+    margin-top: 60px;
+    
+}.contact-item{
+    display: flex;
+    
+}.contact-img img{
+   width: 100%;
+}.contact-img{
+    width: 50%;
+    
+}.contact-content{
+    width: 50%;
+}form{
+   margin-left: 150px;
+   
+}form input{
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid rgb(225, 223, 223);
+   font-size: 20px;
+   color: #999;
+   transition: background-color 0.5s;
+    
+}form input:hover{
+    background-color: RGB(37,56,190);
+    color: #999;
+}
+.contact-title{
+    margin-bottom: 15px;
+    color: RGB(37,56,190);
+    margin-left: 150px;
+}textarea{
+    border: 1px solid rgb(225, 223, 223);
+    font-size: 20px;
+    color: #999; 
+    transition: background-color 0.5s;
+}.btn-submit{
+   font-size: 20px;
+   width: 20%;
+   padding: 5px;
+   border-radius: 5%;
+   
+   background-color: RGB(37,56,190);
+}textarea:hover{
+    background-color: RGB(37,56,190);
+    color: #999;
+}
+/*footer section*/
+footer{
+    background-color: #333;
+}.footer-content{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+   
+    
+}.footer-desc{
+    width: 24%;
+   margin-left: 15px;
+    margin-top: 50px;
+  
+}.footer-desc i{
+   font-size: 25px;
+   margin-left: 10px;
+}
+.footer-paragraph{
+    color: #999;
+    text-align: justify;
+
+}
+.footer-links{
+    width: 24%;
+    margin-top: 45px;
+    margin-left: 55px;
+    
+}.footer-links a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: RGB(37,56,190);
+}.footer-links a:hover{
+    color: #999;
+}
+.contact{  
+    width: 24%;
+    margin-top: 40px;
+   
+}.contact h3{
+color: RGB(37,56,190);
+margin-bottom: 25px;
+
+}.contact i{
+    margin-bottom: 15px;
+    font-size: larger;
+    color: RGB(37,56,190);
+
+}.contact span{
+    color:#999;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.register{
+    margin-top: 40px;
+    width: 24%;
+    
+}.register h3{
+    color: RGB(37,56,190);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+
+}.register input{
+width: 80%;
+margin-bottom: 20px;
+padding: 5px;
+}.register button{
+    width: 80%;
+    padding: 4px;
+    background-color: RGB(37,56,190);
+    border: none;
+
+}.register button:hover{
+    background-color: #999;
+}.copyright{
+    background-color: RGB(37,56,190);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #999;
+}
